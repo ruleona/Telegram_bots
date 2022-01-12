@@ -1,1 +1,1 @@
-web: python test_your_luck_bot.py
+bot: python test_your_luck_bot.py

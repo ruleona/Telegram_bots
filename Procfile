@@ -1,1 +1,1 @@
-worker: python test_your_luck_bot.py
+web: python test_your_luck_bot.py

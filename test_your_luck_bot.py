@@ -1,5 +1,6 @@
 import telebot
 from random import choice
+from token import bot_token
 import os
 from flask import Flask, request
 import logging
@@ -38,7 +39,7 @@ def response(type):
     return choice(answers[type])
 
 
-bot = telebot.TeleBot("1060491984:AAExItzyFjCwULZIoL32Bs7yNwM-pK_htZo")
+bot = telebot.TeleBot(bot_token)
 
 @bot.message_handler(content_types=['text'])
 def get_text_messages(message):
